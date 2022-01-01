@@ -80,7 +80,7 @@ nav ul li a{
     }
     .nav-wrapper ul{
         position: absolute;
-        top: 30%;
+        top: 150px;
         transform: translateY(-50%);
         width: 100%;
     }
