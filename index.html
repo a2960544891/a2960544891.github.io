@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/indexa.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="wrapper-nav">
+            <input type="checkbox" name="hidden" id="nav">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <a href="#">ZHU</a>
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">联系我</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="wrapper2-nav">
+            <div class="nav-wrapper2">
+                <ul class="nav-wrapper2-ul">
+                    <li class="nav-wrapper2-ul-li"><a href="#" class="nav-wrapper2-ul-li-a">首页</a></li>
+                    <li class="nav-wrapper2-ul-li"><a href="#" class="nav-wrapper2-ul-li-a">首页</a></li>
+                    <li class="nav-wrapper2-ul-li"><a href="#" class="nav-wrapper2-ul-li-a">首页</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="background">
+            <div class="bg-photo bg-photo-1" style="display: block;">你好</div>
+        </div>
+    </div>
+    <div class="body-title"><a href="#"></a></div>
+    <div class="body">
+        <div class="body-div"><a href="#"></a></div>
+        <div class="body-div"><a href="#"></a></div>
+        <div class="body-div"><a href="#"></a></div>
+    </div>
+
+
+
+    <div class="services-section">
+		<div class="inner-width">
+			<h1 class="section-title">作品分类</h1>
+			<div class="border"></div>
+			<div class="services-container">
+				<div class="service-box">
+					<div class="service-icon">
+						<div><img class="divv" src="img/1111.jpg" alt=""></div>
+					</div>
+					<div class="service-title">3DMAX</div>
+					<div class="service-desc">
+						做过电商项目的同学都知道，店铺装修是电商系统必备的一个功能，在某些场景下，可能是广告页制作、活动页制作、微页面制作，但基本功能都是类似的。所谓店铺装修，就是用户可以在
+						PC端进行移动页辑，属于用户高度自定义的功能。最终编辑的结果。
+					</div>
+				</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<div class="divv"></div>
+					</div>
+					<div class="service-title">C4D</div>
+					<div class="service-desc">
+						做过电商项目的同学都知道，店铺装修是电商系统必备的一个功能，在某些场景下，可能是广告页制作、活动页制作、微页要通过简单的拖拽就可以实现页面的编辑，属于用户高度自定义的功能。最终编辑的结果。
+					</div>
+				</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<div class="divv"></div>
+					</div>
+					<div class="service-title">Rhino</div>
+					<div class="service-desc">
+						做过电商项目的同学都知道，店铺装修是电商系统必备的一个功能，在某些场景下，可能是广告页制作、活动页制作、微页面制作，但基本功能都是拖拽就可以实现页面的编辑，属于用户高度自定义的功能。最终编辑的结果。
+					</div>
+				</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<div class="divv"></div>
+					</div>
+					<div class="service-title">MaYa</div>
+					<div class="service-desc">
+						PC端进行移动页面的制作，只需要通过简单的拖拽就可以实现页面的编辑，属于用户高度自定义的功能。最终编辑的结果。
+					</div>
+				</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<div class="divv"></div>
+					</div>
+					<div class="service-title">PS</div>
+					<div class="service-desc">
+						做过电商项目的同学都知道，店铺装修是电商系统必备的一个功能，在某些场景下，可能是广告页制作、活动页制。所谓店铺装修，就是用户可以在
+						PC端进行移动页面的制作，只需要通过简单的拖拽就可以实现页面的编辑，属于用户高度自定义的功能。最终编辑的结果。
+					</div>
+				</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<div class="divv"></div>
+					</div>
+					<div class="service-title">AE</div>
+					<div class="service-desc">
+						做过电商项目的同学都知道，店铺装修是电商系统必备的一个功能，在某些场景下，可能是广告页制作、活动页制作、微页面制作，但基本需要通过简单的拖拽就可以实现页面的编辑，属于用户高度自定义的功能。最终编辑的结果。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".nav-wrapper2").hide();
+        $(window).scroll(function () {
+            if ($(document).scrollTop() >= 200) {
+                $(".nav-wrapper2").addClass("fixnav").slideDown();
+            } else {
+                $(".nav-wrapper2").hide();
+            }
+        })
+    })
+</script>
+
+</html>
