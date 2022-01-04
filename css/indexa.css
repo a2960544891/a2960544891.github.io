@@ -16,9 +16,6 @@ body{
     height: 100vh;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 400;
-    /* background:url(../img/CYD.jpg) ; */
-    /* background-position: center; */
-    /* background-size: cover; */
 }
 .wrapper-nav{
     width: 100%;
@@ -98,18 +95,38 @@ body{
 }
 
 #background .bg-photo-1 {
-    background: url('../img/indext.jpg') no-repeat center center;
+    /* background: url('../img/indext.jpg') no-repeat center center; */
+    background-color: rgb(240, 239, 238);
+}
+.bg-title{
+    width: 100%;
+    justify-content: center;
+    display:flex;
 }
 
-#background-ie {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #211f1f;
+.bg-photo-img{
+    margin-top: 150px;
+    width: 400px;
+    height: 550px;
+    background-color: rgb(102, 101, 101);
 }
+.bg-photo-title{
+    margin-top: 150px;
+    width: 500px;
+    height: 550px;
+}
+.bg-photo-button1{
+    width: 500px;
+    height: 350px;
+    background-color: rgb(202, 202, 202);
+}
+.bg-photo-button2{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(170, 169, 169);
+}
+
+
 
 
 .fixnav {
@@ -157,8 +174,9 @@ body{
     z-index: 9999;
     height: 50px;
     padding: 0px;
+    margin-top: 150px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     .nav-wrapper2-ul-li{
         display: inline-block;
         width: 180px;
@@ -179,7 +197,7 @@ body{
         height: 40px;
     }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .nav-wrapper2-ul-li{
         display: inline-block;
         width: 50px;
@@ -192,12 +210,14 @@ body{
 
 
 .divv {
+    margin: 10 auto;
     height: 65px;
     width: 65px;
 }
 
+
 .services-section {
-    background: #333;
+    background: rgb(255, 248, 239);
     background-size: cover;
     padding: 60px 0;
 }
@@ -232,6 +252,7 @@ body{
 
 .service-box {
     max-width: 33.33%;
+    height: 180px;
     padding: 10px;
     text-align: center;
     color: #ddd;
@@ -243,16 +264,19 @@ body{
     width: 70px;
     height: 70px;
     border: 3px solid #82ccdd;
-    color: #82ccdd;
     transform: rotate(45deg);
     margin-bottom: 30px;
     margin-top: 16px;
     transition: 0.3s linear;
+    background-color: rgb(99, 97, 97);
 }
 .service-box:hover .service-icon {
-    background: #82ccdd;
-    color: #ddd;
+    transform: scale(1.5);
 }
+.service-box:hover .divv {
+    transform: scale(1.0);
+}
+
 
 .service-title {
     font-size: 18px;
@@ -279,19 +303,24 @@ body{
 
 @media screen and (max-width: 480px) {
     .service-box {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .service-box {
         max-width: 100%;
     }
 }
 
 
-
 .divv2 {
     height: 270px;
-    width: 100%;
+    min-width: 350px;
+    max-width: 350px;
 }
 
 .services-section2 {
-    background: #333;
+    background: rgb(240, 239, 238);
     background-size: cover;
     padding: 60px 0;
 }
@@ -305,6 +334,7 @@ body{
 }
 
 .section-title2 {
+    margin-top: 120px;
     text-align: center;
     color: #ddd;
     text-transform: uppercase;
@@ -325,9 +355,11 @@ body{
 }
 
 .service-box2 {
+    max-width: 350px;
+    min-width: 350px;
     padding: 5px;
     text-align: center;
-    color: #ddd;
+    color: rgb(161, 160, 160);
     cursor: pointer;
     margin-left: 15px;
     margin-right: 15px;
@@ -335,7 +367,7 @@ body{
 
 .service-icon2 {
     display: inline-block;
-    width: 370px;
+    min-width: 350px;
     height: 270px;
     margin-bottom: 30px;
     margin-top: 16px;
@@ -373,4 +405,53 @@ body{
     .service-box2 {
         max-width: 100%;
     }
+}
+.service-box2:hover .service-icon2 {
+    transform: scale(1.1);
+}
+.service-box2:hover .divv2 {
+    transform: scale(1.0);
+}
+
+
+
+
+.ckgd-box{
+    cursor: pointer;
+    width: 390px;
+    height: 80px;
+}
+.ckgd-icon{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid burlywood;
+    text-align: center;
+    line-height: 80px;
+    color: aliceblue;
+    font-size: 28px;
+    margin-top: 100px;
+}
+.ckgd-desc{
+    text-align: center;
+    margin-top: 5px;
+    color: aliceblue;
+}
+@media screen and (max-width: 1200px) {
+    .ckgd-box{
+        width: 390px;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1586px) {
+    .ckgd-icon{
+        margin-top: 20px;
+    }
+}
+.ckgd-a{
+    display: inline-block;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
 }
