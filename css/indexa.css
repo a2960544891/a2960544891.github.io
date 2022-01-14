@@ -630,7 +630,7 @@ a{
 .service-icon2 {
     display: inline-block;
     width: 100%;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
     margin-top: 1.6rem;
     transition: 0.3s linear;
 }
