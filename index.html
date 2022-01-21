@@ -9,7 +9,7 @@
     <title>主页</title>
     <link rel="stylesheet" href="index.css">
     <script src="js/indext.js"></script>
-    <script src="js/skrollr.js"></script>
+    <script src="js/scrollreveal.js"></script>
 </head>
 
 <body>
@@ -47,7 +47,6 @@
             btn.style.marginTop = value * 1.5 + "px";
         })
     </script>
-    <div class="jiange"></div>
     <div class="big-text" id="title">
         <div class="text">
             <div class="text-div1">
@@ -64,15 +63,13 @@
             </div>
             <div class="text-div-jiange"></div>
             <div class="text-div2">
-                <img class="text-img" src="img/indext2.png" alt="">
+                <img class="text_img" src="img/indext2.png" alt="">
             </div>
         </div>
     </div>
     <div class="fenlei">
         <div class="inner-width-div">
-            <div></div>
             <h1 class="section-title">作品分类</h1>
-            <div></div>
         </div>
         <div class="big-container">
             <div class="container">
@@ -82,8 +79,8 @@
                     </div>
                     <div class="content">
                         <div>
-                            <h2>三维建模</h2>
-                            <p>利用3DsMax、C4D、Rhino等软件进行模型制作</p>
+                            <p class="h2">三维建模</p>
+                            <p class="p">利用3DsMax、C4D、Rhino等软件进行模型制作</p>
                             <a href="#">查看更多</a>
                         </div>
                     </div>
@@ -94,8 +91,8 @@
                     </div>
                     <div class="content">
                         <div>
-                            <h2>设计</h2>
-                            <p>包括但不限于平面设计、海报设计、logo设计</p>
+                            <p class="h2">视频动画</p>
+                            <p class="p">使用AE、三维软件进行制作MG动画以及三维动画</p>
                             <a href="#">查看更多</a>
                         </div>
                     </div>
@@ -106,8 +103,8 @@
                     </div>
                     <div class="content">
                         <div>
-                            <h2>视频动画</h2>
-                            <p>使用AE、三维软件进行制作MG动画以及三维动画</p>
+                            <p class="h2">设计</p>
+                            <p class="p">包括但不限于平面设计、海报设计、logo设计</p>
                             <a href="#">查看更多</a>
                         </div>
                     </div>
@@ -118,8 +115,8 @@
                     </div>
                     <div class="content">
                         <div>
-                            <h2>UE4</h2>
-                            <p>利用虚幻4制作场景视频以及游戏</p>
+                            <p class="h2">UE4</p>
+                            <p class="p">利用虚幻4制作场景视频以及游戏</p>
                             <a href="#">查看更多</a>
                         </div>
                     </div>
@@ -128,22 +125,13 @@
         </div>
     </div>
 
-
-
-
     <script>
-        ScrollReveal().reveal('.text-div2', {
-            distance: '500px',
+        ScrollReveal().reveal('.card', {
+            distance: '50px',
+            delay: 375,
+            easing: 'ease-in',
             duration: 500,
-            easing: 'ease-out',
-            interval: 100,
-            opacity: 0,
             origin: 'right',
-            rotate: {
-                x: 0,
-                y: 0,
-                z: 0
-            },
             reset: true
         });
     </script>
